@@ -3,7 +3,7 @@ import express from 'express'
 
 const app = express()
 
-app.get('/ads', (req, res) =>{
+app.get('/ads', (req:any, res:any) =>{
     return res.json([
         {id: 1, name: 'AD 1'},
         {id: 2, name: 'AD 2'},

@@ -10,6 +10,7 @@ app.get('/ads', (req:any, res:any) =>{
         {id: 3, name: 'AD 3'},
         {id: 4, name: 'AD 4'},
         {id: 5, name: 'AD 5'},
+        {id: 6, name: 'AD 6'},
     ])
 })
 

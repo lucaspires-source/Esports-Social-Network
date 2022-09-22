@@ -9,7 +9,6 @@ export default function Input(props:InputProps) {
     <input
     className="bg-zinc-900 py-3 px-4 rounded text-sm placeholder:text-zinc-500"
     {...props}
-    placeholder="Selecione o game que deseja jogar"
   />
   )
 }

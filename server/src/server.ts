@@ -47,11 +47,12 @@ const ads = await prisma.ad.findMany({
     }
 })
 
+
 return res.json(ads.map((ad:any) =>{
     return {
-       ...ad,
-       weeekDays:ad.weekDays.split(','),
-       hourStart:convertMinutesStringToHour(ad.hoursStart),
+        ...ad,
+       weekDays:ad.weekDays.split(','),
+       hourStart:convertMinutesStringToHour(ad.hourStart),
        hourEnd:convertMinutesStringToHour(ad.hourEnd)
     }
 }))

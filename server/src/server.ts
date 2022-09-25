@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 const prisma = new PrismaClient({
-    log:['query']
+
 })
 
 
@@ -85,7 +85,7 @@ app.get('/ads:id/discord', async (req, res) => {
                 gameId,
                 name:body.name,
                 discord:body.discord,
-                weekDays:body.weeekDays.join(','),
+                weekDays:body.weekDays.join(','),
                 useVoiceChannel:body.useVoiceChannel,
                 yearsPlaying:body.yearsPlaying,
                 hourStart:convertHourStringToMinutes(body.hourStart),
